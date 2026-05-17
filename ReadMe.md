@@ -2,7 +2,7 @@
 
 ## Prompt utilizado para generar `UserStories-iniciales.md`
 
-Se utilizó el **prompt estructurado de este archivo** (secciones ROL, OBJETIVO, plantillas US/TK, WSJF, 6 secciones obligatorias). Entrada: lectura íntegra de `LTI_NAR.md` v2.1.
+Se utilizó el **prompt estructurado del archivo prompts.md** (secciones ROL, OBJETIVO, plantillas US/TK, WSJF, 6 secciones obligatorias). Entrada: lectura íntegra de `LTI_NAR.md` v2.1 (archivo del ejercicio anterior).
 
 ## Prompts alternativos considerados (no usados en entrega final)
 
@@ -20,7 +20,7 @@ Se utilizó el **prompt estructurado de este archivo** (secciones ROL, OBJETIVO,
 4. **WSJF + Mermaid** conectan priorización con dependencias reales (auth → parsing → Kanban).
 5. **Supuestos explícitos** cuando el PRD no detalla UC (War Room, HRIS) evitan inventar scope contradictorio.
 
-**Entregable generado:** `LTI-iniciales/UserStories-iniciales.md` (11 US, backlog, 15 tickets TK-301–315 para US-003, estimación y riesgos).
+**Entregable generado:** `LTI-NAR/UserStories-NAR.md` (11 US, backlog, 15 tickets TK-301–315 para US-003, estimación y riesgos).
 
 
 # Instructions | EN 
