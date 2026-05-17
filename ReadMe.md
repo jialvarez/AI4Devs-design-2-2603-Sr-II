@@ -1,3 +1,28 @@
+# Historial de prompts y conclusiones (entrega 17 mayo 2026)
+
+## Prompt utilizado para generar `UserStories-iniciales.md`
+
+Se utilizó el **prompt estructurado de este archivo** (secciones ROL, OBJETIVO, plantillas US/TK, WSJF, 6 secciones obligatorias). Entrada: lectura íntegra de `LTI_NAR.md` v2.1.
+
+## Prompts alternativos considerados (no usados en entrega final)
+
+| # | Enfoque | Resultado esperado |
+|---|---------|-------------------|
+| A | "Genera 10 user stories del PRD LTI" sin plantilla | Historias incompletas, sin GWT ni trazabilidad |
+| B | Solo backlog WSJF sin tickets | Priorización útil pero sin aterrizaje técnico para devs |
+| C | Prompt actual (completo) | Documento único listo para Sprint Planning |
+
+## Conclusión: por qué el prompt completo fue el más efectivo
+
+1. **Plantillas obligatorias** (US + TK) eliminan omisiones de RBAC, datos ER, DoD e integraciones.
+2. **Orden fijo de 6 secciones** alinea entregable con rúbrica del ejercicio y roadmap Gantt del PRD.
+3. **Criterio de éxito explícito** ("dev sin leer PRD puede codear") fuerza contratos API y colas en la descomposición de parsing.
+4. **WSJF + Mermaid** conectan priorización con dependencias reales (auth → parsing → Kanban).
+5. **Supuestos explícitos** cuando el PRD no detalla UC (War Room, HRIS) evitan inventar scope contradictorio.
+
+**Entregable generado:** `LTI-iniciales/UserStories-iniciales.md` (11 US, backlog, 15 tickets TK-301–315 para US-003, estimación y riesgos).
+
+
 # Instructions | EN 
 
 In this exercise, you will act as a Product Manager and Business Analyst.
@@ -33,7 +58,7 @@ Go for it!
 
 En este ejercicio vas a actuar como un Product Manager y Business Analyst. 
 
-Usando los documentos que generaste en la sección anterior y que conforman un PRD básico (funcionalidades clave, casos de uso, modelo de datos...), tu misión es preparar la documentación necesaria para empezar a implementar LTI:
+Usando los documentos LTI_NAR.md y prompts.md y que conforman un PRD básico (funcionalidades clave, casos de uso, modelo de datos...), tu misión es preparar la documentación necesaria para empezar a implementar LTI:
 
 Generar las User Stories. Puedes implementar tantas como quieras y puedas, el mínimo son 2. Utiliza lo aprendido sobre buenas prácticas de este capítulo para que contenga toda la información necesaria, y como consejo, usa una plantilla común para todas ellas (recuerda que dejamos un ejemplo de plantilla en la sección de User Stories).
 Arma el Backlog de producto con las User Stories, priorizándolas como consideres conveniente acorde a alguna metodología concreta. experimenta con diferentes formas de generar un prompt que te pueda genera tu back log basado en la documentación que has generado previamente. Entrega los diferentes prompts que usaste e indica cual prompt te dio mejores resultados. Entrega junto a los prompts tus conclusiones, por qué crees este prompt fue efectivo. 
